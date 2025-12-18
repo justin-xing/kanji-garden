@@ -1,0 +1,10 @@
+body {
+  background-color: #f9f8f4; /* Paper color */
+  color: #333333; /* Ink color */
+  -webkit-font-smoothing: antialiased;
+}
+/* Hide scrollbar for clean look */
+::-webkit-scrollbar {
+  width: 0px;
+  background: transparent;
+}
