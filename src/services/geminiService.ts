@@ -36,7 +36,6 @@ export const generateKanjiVisualization = async (
       image: referenceImageUrl,
     };
     const response = await axios.post(`${BACKEND_URL}/imagen`, body);
-    console.log(response.data);
     return response.data.image;
   } catch (error) {
     console.error("Error generating visualization:", error);
