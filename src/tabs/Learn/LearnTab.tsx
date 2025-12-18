@@ -47,7 +47,7 @@ type LearnStepType = (typeof LearnStep)[keyof typeof LearnStep];
 interface UserProgress {
   lessonIndex: number;
   kanjiIndex: number;
-  currentStep?: LearnStep;
+  currentStep?: LearnStepType;
 }
 
 interface DrawnShape {
