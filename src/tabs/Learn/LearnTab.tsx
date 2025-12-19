@@ -531,6 +531,7 @@ const LearnTab: React.FC = () => {
       }
 
       const base64Image = await generateKanjiVisualization(
+        currentKanji.character,
         mnemonic,
         referenceImageUrl
       );

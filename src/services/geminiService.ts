@@ -27,11 +27,13 @@ export const generateMnemonic = async (
 };
 
 export const generateKanjiVisualization = async (
+  character: string,
   mnemonic: string,
   referenceImageUrl?: string
 ): Promise<string | null> => {
   try {
     const body = {
+      character,
       mnemonic,
       image: referenceImageUrl,
     };
